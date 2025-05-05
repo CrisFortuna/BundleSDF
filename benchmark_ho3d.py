@@ -142,9 +142,9 @@ def benchmark_one_video(method,video_dir):
 
 if __name__=='__main__':
   parser = argparse.ArgumentParser()
-  parser.add_argument('--video_dirs', type=str, default="/mnt/9a72c439-d0a7-45e8-8d20-d7a235d02763/DATASET/HO3D_v3/evaluation/SM1")
-  parser.add_argument('--out_dir', type=str, default=f"/home/bowen/debug/ho3d_ours")
-  parser.add_argument('--log_dir', type=str, default=f"/home/bowen/debug/")
+  parser.add_argument('--video_dirs', type=str, default="/home/cristi/Desktop/ETH-Zurich/Spring-2025/3D-Vision/Project/BundleSDF/datasets/HO3D/HO3D_Input/evaluation/SM1")
+  parser.add_argument('--out_dir', type=str, default=f"home/cristi/Desktop/ETH-Zurich/Spring-2025/3D-Vision/Project/BundleSDF/datasets/HO3D/HO3D-Output")
+  parser.add_argument('--log_dir', type=str, default=f"home/cristi/Desktop/ETH-Zurich/Spring-2025/3D-Vision/Project/BundleSDF/debug/")
   args = parser.parse_args()
 
   method = 'ours'
@@ -152,6 +152,7 @@ if __name__=='__main__':
   os.makedirs(args.log_dir, exist_ok=True)
 
   video_dirs = args.video_dirs.split(',')
+  print("video dirs", video_dirs)
   out_data = {}
   args = []
   for video_dir in video_dirs:

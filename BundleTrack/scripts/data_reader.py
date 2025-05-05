@@ -15,7 +15,7 @@ code_dir = os.path.dirname(os.path.realpath(__file__))
 sys.path.append(f'{code_dir}/../../')
 from Utils import *
 
-HO3D_ROOT = '/mnt/9a72c439-d0a7-45e8-8d20-d7a235d02763/DATASET/HO3D_v3'
+HO3D_ROOT = '/home/cristi/Desktop/ETH-Zurich/Spring-2025/3D-Vision/Project/BundleSDF/datasets/HO3D/HO3D_Input/'
 
 
 class YcbineoatReader:
@@ -106,7 +106,7 @@ class YcbineoatReader:
 
   def get_gt_mesh(self):
     ob_name = self.videoname_to_object[self.get_video_name()]
-    mesh = trimesh.load(f'/mnt/9a72c439-d0a7-45e8-8d20-d7a235d02763/DATASET/YCB_Video/YCB_Video_Models/models/{ob_name}/textured_simple.obj')
+    mesh = trimesh.load(f'/home/cristi/Desktop/ETH-Zurich/Spring-2025/3D-Vision/Project/BundleSDF/datasets/YCB_Video/YCB_Video_Models/models/{ob_name}/textured_simple.obj')
     return mesh
 
 

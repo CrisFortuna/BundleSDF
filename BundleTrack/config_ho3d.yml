@@ -1,4 +1,4 @@
-data_dir: /mnt/9a72c439-d0a7-45e8-8d20-d7a235d02763/DATASET/HO3D_v3/evaluation/SM1
+data_dir: /home/cristi/Desktop/ETH-Zurich/Spring-2025/3D-Vision/Project/BundleSDF/datasets/HO3D/HO3D_Input/evaluation/AP10
 model_name: textured_simple
 model_dir: ""
 debug_dir: /home/bowen/debug/BundleTrack/

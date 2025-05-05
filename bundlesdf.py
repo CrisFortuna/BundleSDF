@@ -774,7 +774,7 @@ if __name__=="__main__":
   torch.set_default_tensor_type('torch.cuda.FloatTensor')
 
   cfg_nerf = yaml.load(open(f"{code_dir}/BundleTrack/config_ho3d.yml",'r'))
-  cfg_nerf['data_dir'] = '/mnt/9a72c439-d0a7-45e8-8d20-d7a235d02763/DATASET/HO3D_v3/evaluation/MPM13'
+  cfg_nerf['data_dir'] = '/home/cristi/Desktop/ETH-Zurich/Spring-2025/3D-Vision/Project/BundleSDF/datasets/HO3D/HO3D_Input/evaluation/AP10'
   cfg_nerf['SPDLOG'] = 1
 
   cfg_track_dir = '/tmp/config.yml'

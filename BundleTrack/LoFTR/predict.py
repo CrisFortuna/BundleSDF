@@ -27,7 +27,7 @@ torch.set_grad_enabled(False)
 if __name__ == '__main__':
   parser = argparse.ArgumentParser()
   parser.add_argument('--weight', type=str, default='/mnt/9a72c439-d0a7-45e8-8d20-d7a235d02763/github/LoFTR/weights/outdoor_ds.ckpt', help="Path to the checkpoint.")
-  parser.add_argument('--output_dir', type=str, default='/home/bowen/debug/',help='Directory where to write output frames (If None, no output)')
+  parser.add_argument('--output_dir', type=str, default='/home/cristi/Desktop/ETH-Zurich/Spring-2025/3D-Vision/Project/BundleSDF/debug/',help='Directory where to write output frames (If None, no output)')
   parser.add_argument('--resize', type=int, nargs='+', default=[640, 480],help='Resize the input image before running inference. If two numbers, resize to the exact dimensions, if one number, resize the max ''dimension, if -1, do not resize')
   parser.add_argument('--top_k', type=int, default=2000, help="The max vis_range (please refer to the code).")
   parser.add_argument('--bottom_k', type=int, default=0, help="The min vis_range (please refer to the code).")
